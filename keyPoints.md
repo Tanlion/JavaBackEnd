@@ -2,6 +2,7 @@
 
 | No. | Questions |
 |---- | ---------
+|  | [Core Java](#Core-Java)|
 |1 | [Java Package Levels](#Package-Levels)|
 |2 | [Types for Inner classes](#Types-for-Inner-classes)|
 |3 | [Encapsulation, Polymorphism, Inheritance, Abstraction](#Encapsulation-Polymorphism-Inheritance-Abstraction)|
