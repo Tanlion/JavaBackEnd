@@ -1,3 +1,15 @@
+### Table of Contents
+
+| No. | Questions |
+|---- | ---------
+|1 | [Java Package Levels](#Package Levels)|
+|2 | [Types for Inner classes](#Types for Inner classes)|
+|3 | [Encapsulation, Polymorphism, Inheritance, Abstraction](#Encapsulation, Polymorphism, Inheritance, Abstraction)|
+|4 | [Abstract Class](#Abstract Class)|
+|5 | [Interface](#Interface)|
+
+
+
 # Core Java
 ## Java Concepts
 
@@ -9,6 +21,7 @@ package level: all other classes in the same package can visit this class
 **protected:**  Besides the Classes who have defined these variables and methods, protected classes can also be visited by thire subclass. <br />
 **default:** JAVA 8. The default access modifier is also called package-private, which means that all members are visible within the same package but arenot accessible from other packages.
 
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### Types for Inner classes
 Inner class or nested class is a class declared entirely within the body of another class or interface. Types of nested classes in Java are:
@@ -23,6 +36,7 @@ Inner class or nested class is a class declared entirely within the body of anot
 
 JVM: Java Virtual Machine is a process virtual machine that can execute Java bytecode.
 
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### Encapsulation, Polymorphism, Inheritance, Abstraction
 **Encapsulation:** provides objects with ablity to hide their internal characteristics and behavior. Each object provides a number of methods, which can be accessed by other objects and change its internal data. There are four modifiers: public, private, protected and default.
@@ -33,6 +47,7 @@ JVM: Java Virtual Machine is a process virtual machine that can execute Java byt
 
 **Abstraction:** is the process of separating ideas from 'specific instances', and develop classes of their own functionality, instead of their implementation details. 
 
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### Abstract Class
 Abstract class is a class which cannot be instantiated, meaning you cannot create new instances of an abstract class, but they can be subclassed. The purpose of an abstract class is to function as a base for subclasses. 
@@ -42,11 +57,13 @@ Abstract class is a class which cannot be instantiated, meaning you cannot creat
 "Abstract method": is a method that is declared without an implementation.
 Example of Abstract class: AbstractList, AbstractSet, AbstractMap, AbstractQueue, AbstractCollection. 
 
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### Interface
 Interface is a template which has only method declarations and not the method implementation. A class implements the interface must implement all the methods declared in it. 
 (Cause multiple inheritances cannot be achieved in java. To overcome this problem the Interface concept is introduced.)  
 
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### Difference between Interface and Abstract class
 Abstract Class:
