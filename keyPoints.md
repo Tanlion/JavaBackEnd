@@ -53,33 +53,34 @@
 |47| [Stream in Java 8](#Stream-in-Java-8)|
 |48| [Future Interface, Promise Class and CompletableFuture Class (non-blocking)](#Future-Interface,-Promise-Class-and-CompletableFuture-Class-(non-blocking))|
 |  | [Multithread](#Multithread)|
-|49| [Synchronization, Concurrency and Multithread](#Synchronization, Concurrency and Multithread)|
-|50| [Life Cycle of a Thread](#Life Cycle of a Thread)|
-|51| [How to start a thread](#How to start a thread)|
-|52| [Can we start a thread twice?](#Can we start a thread twice?)|
-|53| [What if we call run() method directly instead start() method?](#What if we call run() method directly instead start() method?)|
+|49| [Synchronization, Concurrency and Multithread](#Synchronization,-Concurrency-and-Multithread)|
+|50| [Life Cycle of a Thread](#Life-Cycle-of-a-Thread)|
+|51| [How to start a thread](#How-to-start-a-thread)|
+|52| [Can we start a thread twice?](#Can-we-start-a-thread-twice?)|
+|53| [What if we call run() method directly instead start() method?](#What-if-we-call-run()-method-directly-instead-start()-method?)|
 |54| [Sleep()](#Sleep())|
-|55| [wait() vs sleep()](#wait() vs sleep())|
-|56| [join() method in multithread](#join() method in multithread)|
-|57| [Thread Synchronization](#Thread Synchronization)|
-|58| [Mutual Exclusive: synchionized keyword](#Mutual Exclusive: synchionized keyword)|
-|59| [Inter-thread communication/Co-operation](#Inter-thread communication/Co-operation)|
+|55| [wait() vs sleep()](#wait()-vs-sleep())|
+|56| [join() method in multithread](#join()-method-in-multithread)|
+|57| [Thread Synchronization](#Thread-Synchronization)|
+|58| [Mutual Exclusive: synchionized keyword](#Mutual-Exclusive:-synchionized-keyword)|
+|59| [Inter-thread communication/Co-operation](#Inter-thread-communication/Co-operation)|
 |60| [Lock Interface](#what-are-the-various-kinds-of-directives)|
-|61| [Lock vs Synchronized](#Lock vs Synchronized)|
+|61| [Lock vs Synchronized](#Lock-vs-Synchronized)|
 |62| [Deadlock](#Deadlock)|
-|63| [Executor Framework vs Fork-Join Pool Framework(preemptive)](#Executor Framework vs Fork-Join Pool Framework(preemptive)|
+|63| [Executor Framework vs Fork-Join Pool Framework(preemptive)](#Executor-Framework-vs-Fork-Join-Pool-Framework(preemptive)|
 |64| [Multithreading and implement](#Multithreading-and-implement)|
 |65| [Extend the Thread class; and override the run method](#Extend-the-Thread-class;-and-override-the-run-method)|
 |66| [Implement the Runnable Interface](#Implement-the-Runnable-Interface)|
 |67| [Implement Callable interface](#Implement-Callable-interface)|
-|68| [Runnable vs Callable](#Runnable vs Callable)|
-|69| [Implement ExecutorService Interface](#Implement ExecutorService Interface)|
-|70| [Instantiating ExecutorService:](#Instantiating ExecutorService:)|
-|71| [Assigning Tasks to the ExecutorService](#Assigning Tasks to the ExecutorService)|
-|72| [Shutting Down an ExecutorService:](#Shutting Down an ExecutorService:)|
-|73| [Pitfalls of ExecutorService:](#Pitfalls of ExecutorService:)|
-|74| [Start a thread and execute parallel tasks](#Start a thread and execute parallel tasks)|
+|68| [Runnable vs Callable](#Runnable-vs-Callable)|
+|69| [Implement ExecutorService Interface](#Implement-ExecutorService-Interface)|
+|70| [Instantiating ExecutorService:](#Instantiating-ExecutorService:)|
+|71| [Assigning Tasks to the ExecutorService](#Assigning-Tasks-to-the-ExecutorService)|
+|72| [Shutting Down an ExecutorService:](#Shutting-Down-an-ExecutorService:)|
+|73| [Pitfalls of ExecutorService:](#Pitfalls-of-ExecutorService:)|
+|74| [Start a thread and execute parallel tasks](#Start-a-thread-and-execute-parallel-tasks)|
 |  | [DataBase](#Database)
+
 |75| [What is Angular Universal?](#what-is-angular-universal)|
 |76| [What are different types of compilation in Angular?](#what-are-different-types-of-compilation-in-angular)|
 |77| [What is JIT?](#what-is-jit)|
@@ -909,8 +910,6 @@ IntSummaryStatistics statistics = productList.stream()
 // Grouping of stream’s elements according to the specified function:
 Map<Integer, List<Product>> collectorMapOfLists = productList.stream()
   .collect(Collectors.groupingBy(Product::getPrice));
-
-
 ```
 
 
@@ -931,9 +930,9 @@ System.out.println("Highest number in List : " + stats.getMax());
 System.out.println("Lowest number in List : " + stats.getMin());
 System.out.println("Sum of all numbers : " + stats.getSum());
 System.out.println("Average of all numbers : " + stats.getAverage());
-
 ```
-
+    
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### Future Interface, Promise Class and CompletableFuture Class (non-blocking)
 A **Future Interface** represents the result of an asynchronous computation. Methods are provided to check if the computation is complete, to wait for its completion, and to retrieve the result of the computation, blocking if necessary until result is ready. Future is a read-only container of its result. It does not have any method to combine these computations or handle possible errors. 
@@ -1022,7 +1021,7 @@ public static void main(String[] args) throws Exception {
 
 ```
 
-
+ **[⬆ Back to Top](#table-of-contents)**
 
 
 
@@ -1039,6 +1038,8 @@ New. Runnable. Blocked. Waiting. Timed Waiting. Terminated.
 ### Document of Thread(Java 8)
 https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html
 
+    
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### How to start a thread
 **start() method of Thread class** is used to start a newly created thread. It performs following tasks:
@@ -1050,10 +1051,14 @@ https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html
 Whenever we override start() method then our start() method will be executed just like a normal method call and new thread wont be created. <br />
 We can override start/run method of Thread class because it is not final. But it is not recommended to override start() method, otherwise it ruins multi-threading concept.
 
+ **[⬆ Back to Top](#table-of-contents)**
 
+    
 ### Can we start a thread twice?
 No. After starting a thread, it can never be started again. If you does so, an **IllegalThreadStateException** is thrown. In such case, thread will run once but for second time, it will throw exception.
 
+ **[⬆ Back to Top](#table-of-contents)**
+    
 ### What if we call run() method directly instead start() method?
 **Each thread starts in a separate call stack with start() method.**
 Invoking the run() method from main thread, the run() method goes onto the current call stack rather than at the beginning of a new call stack.
@@ -1071,14 +1076,15 @@ public class TestThreadTwice1 extends Thread{
 }  
 ```
 
-
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### Sleep()
 The sleep() method of Thread class is used to sleep a thread for the specified amount of time.
 public void sleep(long miliseconds): Causes the currently executing thread to sleep for the specified number of milliseconds.
 public static void sleep(long miliseconds)throws InterruptedException
 
-
+ **[⬆ Back to Top](#table-of-contents)**
+    
 ### wait() vs sleep()
 | wait() | sleep() |
 |--|--|
@@ -1087,12 +1093,13 @@ public static void sleep(long miliseconds)throws InterruptedException
 | non-static method | static method |
 | should be notified by notify()/notifyAll() | complete after the specified amount of time |
 
-
+ **[⬆ Back to Top](#table-of-contents)**
+    
 ### join() method in multithread
 The join() method waits for a thread to die. In other words, it causes the currently running threads to stop executing until the thread it joins with completes its task.
 public void join()throws InterruptedException
 
-
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### Thread Synchronization
 There are two types of thread synchronization "mutual exclusive" and "inter-thread communication"(Cooperation).
@@ -1124,7 +1131,7 @@ class Table{
 2) Scope of synchronized block is smaller than the method.
 If you put all the codes of the method in the synchronized block, it will work same as the synchronized method.
 
-
+**[⬆ Back to Top](#table-of-contents)**
 
 ### Inter-thread communication/Co-operation
 It is all about allowing synchronized threads to communicate with each other.
@@ -1145,6 +1152,7 @@ Syntax: public final void notify()
 Wakes up all threads that are waiting on this objects monitor. 
 Syntax: public final void notifyAll()
 
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### Lock Interface
 Each object in Java is associated with a monitor, which a thread can lock or unlock. Only one thread at a time may hold a lock on a monitor. Any other threads attempting to lock that monitor are blocked until they can obtain a lock on that monitor. <br />
@@ -1163,6 +1171,8 @@ public boolean tryLock()
 public boolean tryLock(long time, TimeUnit unit)
 ```
 
+**[⬆ Back to Top](#table-of-contents)**
+    
 ### Lock vs Synchronized
 | Lock Interface | Synchronized keyword |
 |--|--|
@@ -1170,12 +1180,13 @@ public boolean tryLock(long time, TimeUnit unit)
 | provide timeout option | no option of timeout if lock is not granted |
 | lock() and unlock() can be called in different methods| must be fully contained within a single method |
 
-
+**[⬆ Back to Top](#table-of-contents)**
 
 ### Deadlock
 Deadlock in java is a part of multithreading. Deadlock can occur in a situation when a thread is waiting for an object lock, that is acquired by another thread and second thread is waiting for an object lock that is acquired by first thread. Since, both threads are waiting for each other to release the lock, the condition is called deadlock.
 
-
+**[⬆ Back to Top](#table-of-contents)**
+    
 ### Executor Framework vs Fork-Join Pool Framework(preemptive)
 Java 7 added ForkJoinPool an implementation of ExecutorService which specifically designed to **execute ForkJoinTask**. ForJoinPool is a special kind of thread pool. They use a **work-stealing pattern**. All threads in a fork-join pool attempt to find and execute tasks submitted to the pool and/or created by other active tasks. <br />
 
@@ -1184,6 +1195,7 @@ In short, the former provides a general-purpose thread pool, while the latter pr
 1) ForkJoinPool is designed to accept and execute ForkJoinTask, which is a lightweight version of FutureTask, while ThreadPoolExecutor is designed to provide a normal thread pool which executes each submitted task using one of possibly several pooled threads.
 2) ForkJoinPool uses a work-stealing pattern, which means one thread can also execute a pending task from another thread. This improves efficiency in the case of ForkJoinTask as most of the ForkJoinTask algorithm spawn new tasks.  
 
+**[⬆ Back to Top](#table-of-contents)**
 
 ### Multithreading and implement
 To maximum utilization of CPU, Multithreading allows concurrent execution of two or more threads. Threads are light-weight processes within a process. 
@@ -1192,12 +1204,13 @@ To maximum utilization of CPU, Multithreading allows concurrent execution of two
 - Implement Callable interface.
 - Using the Executor framework to create a thread pool. 
 
+**[⬆ Back to Top](#table-of-contents)**
+    
 #### Extend the Thread class; and override the run method
 The following is far from production-ready code,  we now need to write additional boilerplate to deal with: <br/>
 the consistent creation of new threads <br/>
 the number of concurrent live threads <br/>
 the threads deallocation: very important for daemon threads in order to avoid leaks <br/>
-
 
 ```
 public class NewThread extends Thread {  
@@ -1240,6 +1253,8 @@ public class MultipleThreadExample {
 }
 ```
 
+ **[⬆ Back to Top](#table-of-contents)**   
+    
 #### Implement the Runnable Interface
 We create a new class which implements java.lang.Runnable interface and override run() method. Then we **instantiate a Thread object** and call start() method on this object. 
 Runnable interface have only one method named run().
@@ -1308,6 +1323,7 @@ Thread 16 is running
 ``` 
 If you are not extending the Thread class, your class object would not be treated as a thread object. So you need to explicitely **create Thread class object**.
 
+ **[⬆ Back to Top](#table-of-contents)**
 
 #### Implement Callable interface
 The Callable interface is a generic interface containing a single call() method – which returns a generic value V:
@@ -1358,7 +1374,9 @@ public void whenException_ThenCallableDoesntThrowsItIfGetIsNotCalled(){
 }
 
 ```
-
+    
+**[⬆ Back to Top](#table-of-contents)**
+    
 #### Runnable vs Callable
 | Runnable | Callable |
 |----------|----------|
@@ -1375,12 +1393,14 @@ public interface Callable<V> {
     V call() throws Exception;
 }
 ```
-
+**[⬆ Back to Top](#table-of-contents)**
 
 #### Implement ExecutorService Interface
 Create a thread pool. (Features: thread reusability, task queues, fork-join pool, completableFuture).
 Prons: Thread reusability, in particular, is very important: in a large-scale application, allocating and deallocating many thread objects creates a significant memory management overhead.
 
+**[⬆ Back to Top](#table-of-contents)**
+    
 ##### Instantiating ExecutorService:
 Executes only one thread:
 ```
@@ -1409,7 +1429,8 @@ Choose an implementation class of **ExecutorService** interface and create it’
 ExecutorService executorService = new ThreadPoolExecutor(10, 100, 5L, TimeUnit.MILLISECONDS,   
                                                     new LinkedBlockingQueue<Runnable>());
 ```
-
+**[⬆ Back to Top](#table-of-contents)**
+   
 ##### Assigning Tasks to the ExecutorService:
 ExecutorService can execute Runnable and Callable tasks.
 **execute():** returns nothing and dosen't get the result of a task's execution or to check the task's status (is it running):
@@ -1444,6 +1465,7 @@ String result = executorService.invokeAny(callableTasks);
 List<Future<String>> futures = executorService.invokeAll(callableTasks);
 ```
 
+**[⬆ Back to Top](#table-of-contents)**
 
 ##### Shutting Down an ExecutorService:
 In general, the ExecutorService will not be automatically destroyed when there is no task to process. It will stay alive and wait for new work to do. <br />
@@ -1477,6 +1499,7 @@ catch (InterruptedException e) {
 
 ```
 
+**[⬆ Back to Top](#table-of-contents)**
 
 ##### Pitfalls of ExecutorService:
 **Keeping an unused ExecutorService alive:** See the detailed explanation in Section 4 on how to shut down an ExecutorService.
@@ -1526,11 +1549,7 @@ https://www.baeldung.com/java-completablefuture
 https://howtodoinjava.com/java/multi-threading/executor-service-example/
 
 
-
-
-
-
-
+**[⬆ Back to Top](#table-of-contents)**
 
 
 
