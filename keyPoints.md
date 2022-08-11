@@ -8,47 +8,47 @@
 |3 | [Encapsulation, Polymorphism, Inheritance, Abstraction](#Encapsulation-Polymorphism-Inheritance-Abstraction)|
 |4 | [Abstract Class](#Abstract-Class)|
 |5 | [Interface](#Interface)|
-|6 | [Difference between Interface and Abstract class](#Difference between Interface and Abstract class)|
+|6 | [Difference between Interface and Abstract class](#Difference-between-Interface-and-Abstract-class)|
 |7 | [Constructor](#Constructor)|
 |8 | [Serialization](#Serialization)|
-|9 | [Sub-class and Super-class](#Sub-class and Super-class)|
-|10| [Overloading and Overriding](#Overloading and Overriding)|
-|11| [Functional Interface](#Functional Interface)|
+|9 | [Sub-class and Super-class](#Sub-class-and-Super-class)|
+|10| [Overloading and Overriding](#Overloading-and-Overriding)|
+|11| [Functional Interface](#Functional-Interface)|
 |12| [Predicate](#Predicate)|
-|13| [Lambda Expressions](#Lambda Expressions)|
+|13| [Lambda Expressions](#Lambda-Expressions)|
 |14| [Collections](#Collections)|
 |15| [OOP](#OOP)|
-|16| [SOLID Principle of OOD](#SOLID Principle of OOD)|
+|16| [SOLID Principle of OOD](#SOLID-Principle-of-OOD)|
 |17| [MVC](#MVC)|
 |18| [Annotation](#Annotation)|
-|19| [Comparable vs Comparator](#Comparable vs Comparator)|
+|19| [Comparable vs Comparator](#Comparable-vs-Comparator)|
 |20| [ClassLoader](#ClassLoader)|
 |21| [Reflection](#Reflection)|
 |  | [Data Structure in Java](Data-Structure-in-Java)|
-|22| [JVM Memory](#JVM Memory)|
-|23| [JVM Runtime Memory Structure](#JVM Runtime Memory Structure)|
-|24| [Metaspace in JVM](#Metaspace in JVM)|
-|25| [Garbage Collection](#Garbage Collection)|
-|26| [Eight primitive data type](#Eight primitive data type)|
-|27| [How to create immutable class?](#How to create immutable class)|
-|28| [How immutable clone (deep copy)?](#How immutable clone (deep copy))|
-|29| [How to create/design singleton class](#How to create/design singleton class)|
-|30| [HashCode() vs equals()](#HashCode() vs equals())|
-|31| [List vs Set](#List vs Set)|
-|32| [Difference between HashSet and TreeSet](#Difference between HashSet and TreeSet)|
-|33| [ArrayList vs LinkedList](#ArrayList vs LinkedList)|
-|34| [String Buffer vs String Builder](#String Buffer vs String Builder)|
-|35| [Binary Tree](#Binary Tree)|
-|36| [HashMap, HashTable, ConcurrentHashMap and Hash Collision](#HashMap, HashTable, ConcurrentHashMap and Hash Collision)|
-|37| [HashMap, TreeMap, LinkedHashMap](#HashMap, TreeMap, LinkedHashMap)|
+|22| [JVM Memory](#JVM-Memory)|
+|23| [JVM Runtime Memory Structure](#JVM-Runtime-Memory-Structure)|
+|24| [Metaspace in JVM](#Metaspace-in-JVM)|
+|25| [Garbage Collection](#Garbage-Collection)|
+|26| [Eight primitive data type](#Eight-primitive-data-type)|
+|27| [How to create immutable class?](#How-to-create-immutable-class)|
+|28| [How immutable clone (deep copy)?](#How-immutable-clone-(deep-copy))|
+|29| [How to create/design singleton class](#How-to-create/design-singleton-class)|
+|30| [HashCode() vs equals()](#HashCode()-vs-equals())|
+|31| [List vs Set](#List-vs-Set)|
+|32| [Difference between HashSet and TreeSet](#Difference-between-HashSet-and-TreeSet)|
+|33| [ArrayList vs LinkedList](#ArrayList-vs-LinkedList)|
+|34| [String Buffer vs String Builder](#String-Buffer-vs-String-Builder)|
+|35| [Binary Tree](#Binary-Tree)|
+|36| [HashMap, HashTable, ConcurrentHashMap and Hash Collision](#HashMap,-HashTable,-ConcurrentHashMap-and-Hash-Collision)|
+|37| [HashMap, TreeMap, LinkedHashMap](#HashMap,-TreeMap,-LinkedHashMap)|
 |38| [Collections](#Collections)|
-|39| [Final, finally and finalize()](#final, finally and finalize())|
-|40| [Volatile: keyword to ensure thread-safe](#volatile: keyword to ensure thread-safe)|
-|41| [What is generics? Customized own generic type?](#What is generics? Customized own generic type?)|
+|39| [Final, finally and finalize()](#final,-finally-and-finalize())|
+|40| [Volatile: keyword to ensure thread-safe](#volatile:-keyword-to-ensure-thread-safe)|
+|41| [What is generics? Customized own generic type?](#What-is-generics?-Customized-own-generic-type?)|
 |42| [Exception Handling](#Exception-Handling)|
-|43| [Exception and Error](#Exception and Error)|
-|44| [Ways to handle exceptions](#Ways to handle exceptions)|
-|45| [Throws and Throw](#Throws and Throw)|
+|43| [Exception and Error](#Exception-and-Error)|
+|44| [Ways to handle exceptions](#Ways-to-handle-exceptions)|
+|45| [Throws and Throw](#Throws-and-Throw)|
 |46| [Java 8 new features](#java 8 new features)|
 |47| [Stream in Java 8](#Stream in Java 8)|
 |48| [Future Interface, Promise Class and CompletableFuture Class (non-blocking)](#Future Interface, Promise Class and CompletableFuture Class (non-blocking))|
