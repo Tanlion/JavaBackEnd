@@ -43,7 +43,7 @@
 |37| [HashMap, TreeMap, LinkedHashMap](#HashMap,-TreeMap,-LinkedHashMap)|
 |38| [Collections](#Collections)|
 |39| [Final, finally and finalize()](#final,-finally-and-finalize())|
-|40| [Volatile: keyword to ensure thread safe](#volatile:-keyword-to-ensure-thread-safe)|
+|40| [Volatile: keyword to ensure thread safe](#volatile-keyword-to-ensure-thread-safe)|
 |41| [What is generics? Customized own generic type?](#What-is-generics?-Customized-own-generic-type?)|
 |42| [Exception Handling](#Exception-Handling)|
 |43| [Exception and Error](#Exception-and-Error)|
