@@ -43,7 +43,7 @@
 |37| [HashMap, TreeMap, LinkedHashMap](#HashMap,-TreeMap,-LinkedHashMap)|
 |38| [Collections](#Collections)|
 |39| [Final, finally and finalize()](#final,-finally-and-finalize())|
-|40| [Volatile: keyword to ensure thread-safe](#volatile:-keyword-to-ensure-thread-safe)|
+|40| [Volatile: keyword to ensure thread safe](#volatile:-keyword-to-ensure-thread-safe)|
 |41| [What is generics? Customized own generic type?](#What-is-generics?-Customized-own-generic-type?)|
 |42| [Exception Handling](#Exception-Handling)|
 |43| [Exception and Error](#Exception-and-Error)|
@@ -74,10 +74,10 @@
 |67| [Implement Callable interface](#Implement-Callable-interface)|
 |68| [Runnable vs Callable](#Runnable-vs-Callable)|
 |69| [Implement ExecutorService Interface](#Implement-ExecutorService-Interface)|
-|70| [Instantiating ExecutorService:](#Instantiating-ExecutorService:)|
+|70| [Instantiating ExecutorService](#Instantiating-ExecutorService)|
 |71| [Assigning Tasks to the ExecutorService](#Assigning-Tasks-to-the-ExecutorService)|
-|72| [Shutting Down an ExecutorService:](#Shutting-Down-an-ExecutorService:)|
-|73| [Pitfalls of ExecutorService:](#Pitfalls-of-ExecutorService:)|
+|72| [Shutting Down an ExecutorService](#Shutting-Down-an-ExecutorService)|
+|73| [Pitfalls of ExecutorService](#Pitfalls-of-ExecutorService)|
 |74| [Start a thread and execute parallel tasks](#Start-a-thread-and-execute-parallel-tasks)|
 |  | [DataBase](#Database)
 
