@@ -72,14 +72,14 @@
 |65| [Extend the Thread class; and override the run method](#Extend-the-Thread-class;-and-override-the-run-method)|
 |66| [Implement the Runnable Interface](#Implement-the-Runnable-Interface)|
 |67| [Implement Callable interface](#Implement-Callable-interface)|
-
-|68| [What are active router links?](#what-are-active-router-links)|
-|69| [What is router state?](#what-is-router-state)|
-|70| [What are router events?](#what-are-router-events)|
-|71| [What is activated route?](#what-is-activated-route)|
-|72| [How do you define routes?](#how-do-you-define-routes)|
-|73| [What is the purpose of Wildcard route?](#what-is-the-purpose-of-wildcard-route)|
-|74| [Do I need a Routing Module always?](#do-i-need-a-routing-module-always)|
+|68| [Runnable vs Callable](#Runnable vs Callable)|
+|69| [Implement ExecutorService Interface](#Implement ExecutorService Interface)|
+|70| [Instantiating ExecutorService:](#Instantiating ExecutorService:)|
+|71| [Assigning Tasks to the ExecutorService](#Assigning Tasks to the ExecutorService)|
+|72| [Shutting Down an ExecutorService:](#Shutting Down an ExecutorService:)|
+|73| [Pitfalls of ExecutorService:](#Pitfalls of ExecutorService:)|
+|74| [Start a thread and execute parallel tasks](#Start a thread and execute parallel tasks)|
+|  | [DataBase](#Database)
 |75| [What is Angular Universal?](#what-is-angular-universal)|
 |76| [What are different types of compilation in Angular?](#what-are-different-types-of-compilation-in-angular)|
 |77| [What is JIT?](#what-is-jit)|
@@ -356,9 +356,11 @@ Interface:
 - The interface contains only constants.
 - You can implement multiple interfaces as long as required.
 
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### Constructor
 Constructor: a block of codes similar to methods, and gets invoked when a new object is created. Usually it’s how we want to instantiate an object.
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### Serialization:
 This Java process converts items into byte streams that transport objects to JVM.
@@ -372,21 +374,25 @@ To inherit from a class, use the extends keyword. If you don't want other classe
 "Upper casting and down-casting" <br /> 
 Upcasting is casting to a super-type, while downcasting is casting to a sub-type. 
 
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### Overloading and Overriding
 Overloading occurs when two or more methods in the same class have exact the **same name, but different parameters, or diff return type**. Happens at compile-time. 
 
 Overriding is when a child class redefines the same method of its parent class. Overriden methods must have the **same name, argument list, and return type**. Happens at runtime.
 
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### Functional Interface
 **Any interface with a Single Abstract Method (SAM) is a functional interface**, and its implementation may be treated as lambda expressions. Functional interface can have multiple default methods and static methods. Types: Function, Supplier, Consumer, Predicate, Comparator, Operator...<br />
 https://www.baeldung.com/java-8-functional-interfaces
 
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### Predicate
 Predicate is a functional interface, which accepts an argument and return a boolean value. Usually, it used to apply in a filter for a collection of objects.
 
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### Lambda Expressions
 A lambda expression is a short block of code which takes in parameters and returns a value. Similar to methods, but they do not need a name and they can be implemented right in the body of a method.  <br />
@@ -403,6 +409,8 @@ Lambda expressions are Java's first step into **functional programming**, which 
 Runnable run = () -> {code block to execute in a new thread}
 ```
 
+ **[⬆ Back to Top](#table-of-contents)**
+
 ### Collections
 Java Collections Framework provides a well designed set of 'interfaces and classes' that support operations on a collections of objects. 
 The most basic interface in Collections Framework are: Collection, Set, List, Map.
@@ -414,6 +422,7 @@ Object-Oriented Programming. Object -> Class -> Inheritance -> Polymorphism -> A
 - OOPs provides data hiding, whereas, in a procedure-oriented programming language, global data can be accessed from anywhere.
 - OOPs provides the ability to simulate real-world event much more effectively. We can provide the solution of real word problem if we are using the Object-Oriented Programming language.
 
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### SOLID Principle of OOD
 - Single Responsibility: a class should only have one responsibility. Furthermore, it should only have one reason to change.
@@ -422,6 +431,7 @@ Object-Oriented Programming. Object -> Class -> Inheritance -> Polymorphism -> A
 - Interface Segregation: larger interfaces should be split into smaller ones. By doing so, we can ensure that implementing classes only need to be concerned about the methods that are of interest to them. "Many client-specific interfaces are better than one general-purpose interface."
 - Dependency Inversion: instead of high-level modules depending on low-level modules, both will depend on abstractions. Refers to the decoupling of software modules. "depend upon abstractions, not concretions."
 
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### MVC
 The Model, View and Controller, is an architectural pattern that separates an application into three main logical components. Each of these components are built to handle specific development aspects of an application. 
@@ -429,6 +439,7 @@ The Model, View and Controller, is an architectural pattern that separates an ap
 - The View component is used for all the UI logic of the application. 
 - Controllers act as an interface between Model and View components. They process all the business logic and incoming requests, manipulate data using the Model component, and interact with the Views to render the final output.
 
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### Annotation
 Annotation, a form of metadata 注释, provide data about a program that is not part of the program itself. Annotations have no direct effect on the operation of the code they annotate.
@@ -436,6 +447,7 @@ Annotation, a form of metadata 注释, provide data about a program that is not 
 - Software tools can process annotation information to generate code, XML files. At Compile-time and deployment-time processing. 
 - Some annotations are available to be examined at runtime. - Runtime processing.
 
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### Comparable vs Comparator
 Comparable and Comparator both are interfaces and can be used to sort collection elements.
@@ -454,17 +466,19 @@ Comparable and Comparator both are interfaces and can be used to sort collection
 - A Comparator is present in the java.util package.
 - We can sort the list elements of Comparator type by **Collections.sort(List, Comparator)** method.
 
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### ClassLoader
 The Java Class Loader is a part of the Java Runtime Environment that dynamically loads Java classes into the JVM. Usually classes are only loaded on demand. The Java run time system does not need to know about files and file systems as this is delegated to the classloader.
 
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### Reflection
 Reflection API gives us information about the class to which an object belongs and also the methods of that class which can be executed by using the object. Through reflection we can invoke methods at runtime irrespective of the access specifier used with them. <br />
 Reflection can be used to get information of an object by – getClass(), getConstructors(), getMethods(). <br />
 Combine with annotations, using reflection api can achieve lots of framework jobs. 
 
-
+ **[⬆ Back to Top](#table-of-contents)**
 
 
 
@@ -480,6 +494,7 @@ Combine with annotations, using reflection api can achieve lots of framework job
 **Native method stacks**: For every thread, a separate native stack is created. It stores native method information. 
 ![pic](https://media.geeksforgeeks.org/wp-content/uploads/jvm-3.jpg)
 
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### JVM Runtime Memory Structure
 Stack: static memory allocation and the execution of a thread. It contains "primitive values" that are specific to a method and "references" to objects that are in a heap, referred from the method. 
@@ -491,6 +506,7 @@ Heap: space in Java is used for dynamic memory allocation for Java objects and J
 Objects in heap have global access and can be accessed from anywhere in the application.
 not thread-safe.
 
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### Metaspace in JVM
 Metaspace is a new memory space – starting from the Java 8 version; it has replaced the older PermGen memory space. The most significant difference is how it handles memory allocation.
@@ -498,6 +514,8 @@ this native memory region grows automatically by default.
 It also has new flags to tune the memory:
 Additionally,The garbage collector now automatically triggers the cleaning of the dead classes once the class metadata usage reaches its maximum metaspace size.
 with this improvement, JVM reduces the chance to get the OutOfMemory error.
+
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### Garbage Collection
 Automatic garbage collection is the process of looking at 'heap' memory, identifying which objects are in use and which are not, and deleting the unused objects. An unused object, or unreferenced object, is no longer referenced by any part of your program.
@@ -508,13 +526,13 @@ Full GC: cleaning the entire Heap – both Young and Old spaces.
 
 **Call System.gc()/Runtime.getRuntime().gc() to force invoke Java GC.**
 
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### Eight primitive data type
 byte, int, short, long, float, double, char, boolean(default false). <br />
 They are not considered objects and represent raw values. They are stored directly on the stack. <br />
 Auto-boxing: converting a primitive value into its corresponding wrapper class. <br />
 Unboxing: converting an object of a wrapper type to its corresponding primitive value. <br />
-
 
 ### How to create immutable class
 1. Declare the class as **final** so it can’t be extended.
@@ -524,10 +542,10 @@ Unboxing: converting an object of a wrapper type to its corresponding primitive 
 5. Initialize all the fields via a **constructor performing deep copy**.
 6. Perform cloning of objects in the **getter** methods to **return a copy rather than the object reference.**
 
-
 ### How immutable clone (deep copy)
 If you want to change an immutable object, you must clone it and change the clone while you are creating it. Use another constructor to clone your object.
 
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### How to create/design singleton class
 A singleton class is a class that can have only one instance.
@@ -537,22 +555,26 @@ A singleton class is a class that can have only one instance.
     + Providing a static method that returns a reference to the instance. The lazy initialization concept is used to write the static methods.
     + The instance is stored as a private static variable.
 
-
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### HashCode() vs equals()
 Basically, the same function to compare whether objects are the same objects.
 hashCode() faster and equals() is much more accurate.
 hashCode() is less reliable due to hash collision and equals() is more reliable because equals usually directly compare the address.
 
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### List vs Set
 List is an ordered sequecne, it allows duplicate elements, elements can be accessed by their position, multiple null elements can be sorted. List implementations are ArrayList, LinkedList, Stack, Vector. <br />
 Set is an unordered sequence, it doesnot allow duplicated elements, position access to element is not allowed, Null element can store only once. Set implementations are Hash Set, Linked Hash Set, Tree Set.
 
+ **[⬆ Back to Top](#table-of-contents)**
+
 ### Difference between HashSet and TreeSet
 HashSet: Inserte elements are in random order; Be able to store null objects; Performance is fast.
 TreeSet: Maintains the elements in the inserted order; Cannot store null objects; Performance is slow.
 
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### ArrayList vs LinkedList
 ArrayList and LinkedList both implement List interface and maintains insertion order. Both are non synchronized classes.
@@ -579,7 +601,7 @@ ArrayList and LinkedList both implement List interface and maintains insertion o
 | ArrayList | 1| n | n |
 | LinkedList | n | 1 | 1 |
 
-
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### String Buffer vs String Builder
 Java provides three classes to represent a sequence of characters: String(immutable), StringBuffer, and StringBuilder. (Both are mutable sequence of characters.)
@@ -588,6 +610,7 @@ StringBuffer: It is synchronized, thread safe. It means two threads cannot call 
 
 StringBuilder: the same as StringBuffer except it is non-synchronized i.e. not thread safe. It is more efficient. 
 
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### Binary Tree
 A binary tree is a tree data structure in which each node has up to two children, which are referred to as the left child and the right child.
@@ -595,6 +618,7 @@ A binary tree is a tree data structure in which each node has up to two children
 "Binary Search Tree" <br />
 A binary search tree is a binary tree in which every node fits a specific ordering property: all left descendents <= their root < all right descendents.
 
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### HashMap, HashTable, ConcurrentHashMap and Hash Collision
 All implement the Map interface, store key-value pairs, implement hashCode() and equals() methods to determine the index of the key-value pairs and to detect duplicates. They make no guarantees to the order of the map. 
@@ -612,6 +636,7 @@ The ConcurrentHashMap class implements ConcurrentMap as well as Serializable int
 
 "Hash Collision": is a situation where two or more key objects produce the same final hash value and hence point to the same bucket location or array index. This scenario can occur because according to the equals and hashCode methods, two unequal objects can have the same hash code.
 
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### HashMap, TreeMap, LinkedHashMap
 All offer a key-value mapping and a way to iterate through the keys. All three classes implements Map interface.
@@ -639,6 +664,7 @@ Space Complexity:
 - LinkedHashMap has the extra overhead of a doubly-linked list.
 - TreeMap is implemented as a Red-Black tree, which takes more memory.
 
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### Collections
 List: Ordered, may have duplicate elements, has index.
@@ -662,7 +688,7 @@ ThreadSafe Version:
 - ConcurrentHashMap: No need to synchronize the whole map. Very **fast** reads while write is done with a lock. No locking at the object level. Uses a multitude of locks.
 - SynchronizedHashMap: Object level synchronization. Both read and writes acquire a lock. Locking the collection has a performance drawback. Not great efficient.
 
-
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### final, finally and finalize()
 "final" is a keyword used to apply restrictions on class, method and variable. Final class cannot be inherited. Final method cannot be overridden. Final variable cannot be reassigned. Final fields can be either constants or write-once fields. <br/>
@@ -684,11 +710,12 @@ final only allows you to prevent the reference from being changed to another arr
 
 "finallize()" is a protected method of the Object class, which is called by the JVM (Java Virtual Machine)just before an object is garbage collected. 
 
-
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### volatile: to ensure thread-safe
 Volatile: keyword use with "variables" to ensure thread safe, is used to modify the value of a variable by different threads. All writes and reads operations will be directly on the main memory insted of cache. It also guarantees visibility and ordering. It prevents the compiler from reordering of code.
 
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### What is generics? Customized own generic type?
 A generic type is a generic class or interface whose parameter is type. <br />
@@ -699,7 +726,7 @@ Code that uses generics has many benefits over non-generic code:
 - Elimination of casts.
 - Enabling programmers to implement generic algorithms.
 
-
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### Exception Handling
 The Exception Handling is used to handle the runtime errors so that normal flow of the application can be maintained. It is devided into checked and unchecked Exception.
@@ -714,11 +741,14 @@ The Exception Handling is used to handle the runtime errors so that normal flow 
 - It is checked at runtime.
 - The classes which inherit RuntimeException are known as unchecked exceptions （e.g. ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException etc.）
 
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### Exception and Error
 Exception and Error classes are both subclasses of the Throwable class. <br />
 Exception class is used for exceptional conditions that a program should catch. <br />
 Error class defines exceptions that are not expected to be caught by program. <br />
+
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### Ways to handle exceptions?
 - Using try/catch.
@@ -728,28 +758,19 @@ Error class defines exceptions that are not expected to be caught by program. <b
 Throws: keyword is used to declare exceptions. <br />
 Throw: keyword is used to throw an exception instance.
 
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### java 8 new features
 - Interfaces can have **static and default methods** that, despite being declared in an interface, have a defined behavior/implementation.
-
 - Method References: can be used as a shorter and more readable alternative for a lambda expression which only calls an existing method. ":: / ->"
-
 - Optional<T>: can help to handle situations where there is a possibility of getting the NullPointerException (NPE). It works as a container for the object of type T. It can return a value of this object if this value is not a null. When the value inside this container is null it allows doing some predefined actions instead of throwing NPE.
-
 - Stream API: intermediate and terminal operations.
-
 - Lambda expression:
-
 - Functional interfaces,
-
 - Default methods: which allow the interfaces to have methods with implementation, without affecting the classes that implement the interface. (The default methods belongs to the Interface).
-
 - Base64 Encode Decode,
-
 - Collectors class,
-
 - ForEach() method,
-
 - Nashorn JavaScript Engine,
 - Parallel Array Sorting,
 - Type and Repating Annotations,
@@ -757,7 +778,7 @@ Throw: keyword is used to throw an exception instance.
 - Concurrency API Enhancements,
 - JDBC Enhancements etc.
 
-
+ **[⬆ Back to Top](#table-of-contents)**
 
 
 ### Stream in Java
@@ -912,7 +933,6 @@ System.out.println("Sum of all numbers : " + stats.getSum());
 System.out.println("Average of all numbers : " + stats.getAverage());
 
 ```
-
 
 
 ### Future Interface, Promise Class and CompletableFuture Class (non-blocking)
