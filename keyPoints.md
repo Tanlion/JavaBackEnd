@@ -62,12 +62,12 @@
 |55| [wait() vs sleep()](#wait()-vs-sleep())|
 |56| [join() method in multithread](#join()-method-in-multithread)|
 |57| [Thread Synchronization](#Thread-Synchronization)|
-|58| [Mutual Exclusive: synchionized keyword](#Mutual-Exclusive:-synchionized-keyword)|
+|58| [Mutual Exclusive: Synchionized keyword](#Mutual-Exclusive-synchionized-keyword)|
 |59| [Inter-thread communication/Co-operation](#Inter-thread-communication/Co-operation)|
 |60| [Lock Interface](#what-are-the-various-kinds-of-directives)|
 |61| [Lock vs Synchronized](#Lock-vs-Synchronized)|
 |62| [Deadlock](#Deadlock)|
-|63| [Executor Framework vs Fork-Join Pool Framework(preemptive)](#Executor-Framework-vs-Fork-Join-Pool-Framework(preemptive)|
+|63| [Executor Framework vs Fork-Join Pool Framework(preemptive)](#Executor-Framework-vs-Fork-Join-Pool-Framework(preemptive))|
 |64| [Multithreading and implement](#Multithreading-and-implement)|
 |65| [Extend the Thread class; and override the run method](#Extend-the-Thread-class;-and-override-the-run-method)|
 |66| [Implement the Runnable Interface](#Implement-the-Runnable-Interface)|
