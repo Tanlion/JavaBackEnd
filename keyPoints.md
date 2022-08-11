@@ -49,29 +49,30 @@
 |43| [Exception and Error](#Exception-and-Error)|
 |44| [Ways to handle exceptions](#Ways-to-handle-exceptions)|
 |45| [Throws and Throw](#Throws-and-Throw)|
-|46| [Java 8 new features](#java 8 new features)|
-|47| [Stream in Java 8](#Stream in Java 8)|
-|48| [Future Interface, Promise Class and CompletableFuture Class (non-blocking)](#Future Interface, Promise Class and CompletableFuture Class (non-blocking))|
+|46| [Java 8 new features](#java-8-new-features)|
+|47| [Stream in Java 8](#Stream-in-Java-8)|
+|48| [Future Interface, Promise Class and CompletableFuture Class (non-blocking)](#Future-Interface,-Promise-Class-and-CompletableFuture-Class-(non-blocking))|
+|  | [Multithread](#Multithread)|
+|49| [Synchronization, Concurrency and Multithread](#Synchronization, Concurrency and Multithread)|
+|50| [Life Cycle of a Thread](#Life Cycle of a Thread)|
+|51| [How to start a thread](#How to start a thread)|
+|52| [Can we start a thread twice?](#Can we start a thread twice?)|
+|53| [What if we call run() method directly instead start() method?](#What if we call run() method directly instead start() method?)|
+|54| [Sleep()](#Sleep())|
+|55| [wait() vs sleep()](#wait() vs sleep())|
+|56| [join() method in multithread](#join() method in multithread)|
+|57| [Thread Synchronization](#Thread Synchronization)|
+|58| [Mutual Exclusive: synchionized keyword](#Mutual Exclusive: synchionized keyword)|
+|59| [Inter-thread communication/Co-operation](#Inter-thread communication/Co-operation)|
+|60| [Lock Interface](#what-are-the-various-kinds-of-directives)|
+|61| [Lock vs Synchronized](#Lock vs Synchronized)|
+|62| [Deadlock](#Deadlock)|
+|63| [Executor Framework vs Fork-Join Pool Framework(preemptive)](#Executor Framework vs Fork-Join Pool Framework(preemptive)|
+|64| [Multithreading and implement](#Multithreading-and-implement)|
+|65| [Extend the Thread class; and override the run method](#Extend-the-Thread-class;-and-override-the-run-method)|
+|66| [Implement the Runnable Interface](#Implement-the-Runnable-Interface)|
+|67| [Implement Callable interface](#Implement-Callable-interface)|
 
-|49| [What are observable creation functions?](#what-are-observable-creation-functions)|
-|50| [What will happen if you do not supply handler for observer?](#what-will-happen-if-you-do-not-supply-handler-for-observer)|
-|51| [What are angular elements?](#what-are-angular-elements)|
-|52| [What is the browser support of Angular Elements?](#what-is-the-browser-support-of-angular-elements)|
-|53| [What are custom elements?](#what-are-custom-elements)|
-|54| [Do I need to bootstrap custom elements?](#do-i-need-to-bootstrap-custom-elements)|
-|55| [Explain how custom elements works internally?](#explain-how-custom-elements-works-internally)|
-|56| [How to transfer components to custom elements?](#how-to-transfer-components-to-custom-elements)|
-|57| [What are the mapping rules between Angular component and custom element?](#what-are-the-mapping-rules-between-angular-component-and-custom-element)|
-|58| [How do you define typings for custom elements?](#how-do-you-define-typings-for-custom-elements)|
-|59| [What are dynamic components?](#what-are-dynamic-components)|
-|60| [What are the various kinds of directives?](#what-are-the-various-kinds-of-directives)|
-|61| [How do you create directives using CLI?](#how-do-you-create-directives-using-cli)|
-|62| [Give an example for attribute directives?](#give-an-example-for-attribute-directives)|
-|63| [What is Angular Router?](#what-is-angular-router)|
-|64| [What is the purpose of base href tag?](#what-is-the-purpose-of-base-href-tag)|
-|65| [What are the router imports?](#what-are-the-router-imports)|
-|66| [What is router outlet?](#what-is-router-outlet)|
-|67| [What are router links?](#what-are-router-links)|
 |68| [What are active router links?](#what-are-active-router-links)|
 |69| [What is router state?](#what-is-router-state)|
 |70| [What are router events?](#what-are-router-events)|
